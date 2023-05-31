@@ -8,11 +8,11 @@
 ```
 
 ## 2. Benchmark
-
 ```
    1. use `go test -v -bench` for conduct all benchmark and test in this repo
    2. use `go test -v -run=NotMatchUnitTestName -bench=.` for only conduct all benchmark
    3. use `go test -v -run=NotMatchUnitTestName -bench=SpecificBencmark ` for conduct specific test
    4. use `go test -v -bench=. ./...` for conduct all available banchmark test from the root module
+   5. use `go test -v -run=nope -bench=BenchmarkSub/sukarno` for execute specific sub benchmark test
 ```
 
