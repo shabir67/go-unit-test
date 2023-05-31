@@ -9,6 +9,17 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+func TestMain(m *testing.M) {
+	//before(this can include database connection test)
+	fmt.Println("Before Unit Test")
+
+	m.Run()
+
+	//after
+	fmt.Println("After unit test")
+
+}
+
 func TestSkip(t *testing.T) {
 	if runtime.GOOS == "darwin" {
 		t.Skip("Cannot unit test run in Mac")
